@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PutDiary">
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/tv_put"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/editText_Name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="@string/tv_name"
+        android:textSize="30sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/editText_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/tv_description"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/editText_Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/tv_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/editText_description"
+        android:layout_width="292dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/editText_latitude"
+        app:layout_constraintStart_toStartOf="@+id/tv_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="131dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="78dp"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="131dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:text="@string/btn_upload"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_save" />
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="321dp"
+        android:text="@string/latitude"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:text="@string/longitude"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_longitude"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_latitude"
+        app:layout_constraintEnd_toEndOf="@+id/editText_description" />
+
+    <EditText
+        android:id="@+id/editText_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/editText_latitude"
+        app:layout_constraintTop_toBottomOf="@+id/editText_latitude" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_upload"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_upload"
+        app:layout_constraintTop_toBottomOf="@+id/tv_longitude"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

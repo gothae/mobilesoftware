@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="application">KTH Diary</string>
+    <string name="put_diary">여행지 입력</string>
+    <string name="diary_list">여행지 목록</string>
+    <string name="tv_name">이름</string>
+    <string name="tv_description">설명</string>
+    <string name="btn_save">저장</string>
+    <string name="btn_upload">사진 업로드</string>
+    <string name="latitude">위도</string>
+    <string name="longitude">경도</string>
+    <string name="tv_put">일기 입력</string>
+    <string name="tv_list">여행 목록</string>
+    <string name="tourdiary">여행 일기</string>
+    <string name="map">위치</string>
+    <string name="title_activity_my_map">Map</string>
+</resources>
